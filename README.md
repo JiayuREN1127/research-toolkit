@@ -135,7 +135,7 @@
 
 ## 方法论基础
 
-本平台基于 **清华大学经管学院 Research Methods I**（张晨教授）的完整方法论体系构建，涵盖：
+本平台基于系统性的管理研究方法论体系构建，涵盖：
 
 - Interestingness 框架（研究问题三档判断）
 - 文献综述策略（categorize → further categorize → integrate）

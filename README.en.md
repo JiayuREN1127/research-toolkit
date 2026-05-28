@@ -136,7 +136,7 @@ Causality Sandbox    → Stress-test causal claims before designing studies
 
 ## Methodology Foundation
 
-This platform is built on the complete methodology system from **Tsinghua SEM Research Methods I** (Prof. Zhang Chen), covering:
+This platform is built on a comprehensive management research methodology system, covering:
 
 - Interestingness framework for research questions
 - Literature review strategies (categorize → integrate)
