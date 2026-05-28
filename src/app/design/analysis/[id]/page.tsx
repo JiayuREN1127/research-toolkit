@@ -65,10 +65,10 @@ export default function DesignAnalysisPage({
         <div className="max-w-3xl mx-auto px-4 py-4 flex items-center justify-between">
           <div>
             <button
-              onClick={() => router.push('/idea-developer')}
+              onClick={() => router.push('/research-toolkit')}
               className="text-sm text-slate-500 hover:text-slate-700"
             >
-              ← Idea Developer
+              ← Research Toolkit
             </button>
             <h1 className="text-lg font-bold text-slate-800 mt-0.5">
               研究设计检查清单

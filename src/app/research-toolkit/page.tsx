@@ -38,7 +38,7 @@ export default function IdeaDeveloperPage() {
       <div className="max-w-4xl mx-auto px-4 py-12">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-slate-800 tracking-tight">
-            Idea Developer
+            Research Toolkit
           </h1>
           <p className="mt-3 text-lg text-slate-500">
             研究发展工具集 — 基于管理研究方法论体系

@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: '人机协同设计平台 — Idea Developer & Logic Coach',
+  title: '人机协同设计平台 — Research Toolkit & Logic Coach',
   description: '基于管理研究方法论体系，覆盖研究发展全流程与逻辑思维训练',
 };
 

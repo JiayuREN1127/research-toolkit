@@ -4,10 +4,10 @@ import Link from 'next/link';
 
 const products = [
   {
-    title: 'Idea Developer',
+    title: 'Research Toolkit',
     subtitle: '研究发展工具集',
     desc: '基于管理研究方法论体系，覆盖"想法 → Proposal → 研究设计"全流程',
-    href: '/idea-developer',
+    href: '/research-toolkit',
     color: 'from-blue-500 to-violet-600',
     icon: '💡',
     modules: ['创意分析', 'Proposal 诊断', '研究设计检查'],

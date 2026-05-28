@@ -76,7 +76,7 @@ export default function DesignPage() {
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100">
       <header className="bg-white border-b border-slate-200 sticky top-0 z-10">
         <div className="max-w-3xl mx-auto px-4 py-4">
-          <a href="/idea-developer" className="text-sm text-slate-500 hover:text-slate-700">← 返回 Idea Developer</a>
+          <a href="/research-toolkit" className="text-sm text-slate-500 hover:text-slate-700">← 返回 Research Toolkit</a>
         </div>
       </header>
 

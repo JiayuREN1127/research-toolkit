@@ -3,11 +3,11 @@
 import { useState } from 'react';
 import Link from 'next/link';
 
-interface IdeaInputProps {
+interface ResearchInputProps {
   onSubmit: (idea: string) => void;
 }
 
-export default function IdeaInput({ onSubmit }: IdeaInputProps) {
+export default function ResearchInput({ onSubmit }: ResearchInputProps) {
   const [idea, setIdea] = useState('');
 
   return (
@@ -15,7 +15,7 @@ export default function IdeaInput({ onSubmit }: IdeaInputProps) {
       <div className="max-w-2xl w-full">
         <div className="text-center mb-10">
           <h1 className="text-4xl font-bold text-slate-800 tracking-tight">
-            Idea Developer
+            Research Toolkit
           </h1>
           <p className="mt-3 text-lg text-slate-500">
             研究想法发展助手 — 基于管理研究方法论体系

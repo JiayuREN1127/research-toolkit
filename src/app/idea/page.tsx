@@ -3,7 +3,7 @@
 import { useRouter } from 'next/navigation';
 import { useState, useEffect, useRef } from 'react';
 import Cookies from 'js-cookie';
-import IdeaInput from '@/components/IdeaInput';
+import ResearchInput from '@/components/ResearchInput';
 
 const ESTIMATED_MS = 12000;
 const TICK_MS = 100;
@@ -101,12 +101,12 @@ export default function IdeaPage() {
       {/* Nav */}
       <header className="bg-white border-b border-slate-200 sticky top-0 z-10">
         <div className="max-w-3xl mx-auto px-4 py-4">
-          <a href="/idea-developer" className="text-sm text-slate-500 hover:text-slate-700">
-            ← 返回 Idea Developer
+          <a href="/research-toolkit" className="text-sm text-slate-500 hover:text-slate-700">
+            ← 返回 Research Toolkit
           </a>
         </div>
       </header>
-      <IdeaInput onSubmit={handleSubmit} />
+      <ResearchInput onSubmit={handleSubmit} />
     </div>
   );
 }
