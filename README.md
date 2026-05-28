@@ -1,148 +1,147 @@
 # Research Toolkit
 
-A human-AI collaborative research platform that guides the full workflow of study development, from idea refinement through proposal diagnosis to research design validation.
-
 > 基于管理研究方法论体系的人机协同研究平台
 > 覆盖"想法 → Proposal → 研究设计"全流程诊断与抽象思维/因果推断训练
+> [English version →](README.en.md)
 
 ---
 
-## Access
+## 访问入口
 
 **[http://idea.jiayus-test.xyz](http://idea.jiayus-test.xyz)**
 
 ---
 
-## Getting Started
+## 快速开始
 
-Enter the homepage, choose your starting point:
+进入首页，选择你的起点：
 
-- **Research Toolkit** → For study development (3 modules)
-- **Logic Coach** → For thinking skills training (2 modules)
+- **Research Toolkit** → 研究发展全流程（3 个模块）
+- **Logic Coach** → 逻辑思维训练（2 个模块）
 
 ---
 
 ## Research Toolkit
 
-### 1. Idea Analysis
+### 1. 创意分析
 
-**Use when:** You have a rough research idea and want to develop it into a rigorous study.
+**适合场景：** 你有一个初步的研究想法，想把它发展成一个严谨的研究设计。
 
-**How it works:**
-1. Enter your research idea in plain language
-2. AI asks 3-5 clarifying questions about constructs, methods, mechanisms, context
-3. Answer the questions
-4. Receive a structured checklist covering:
-   - Research question quality (Interestingness)
-   - Literature review completeness
-   - Method decision guidance
-   - Causal identification strategies
-   - Theoretical contribution positioning
+**使用流程：**
+1. 用自然语言描述你的研究想法
+2. AI 提出 3-5 个澄清问题，覆盖构念操作化、研究层面、机制、情境、因果方向等维度
+3. 回答这些问题
+4. 获得一份结构化 checklist，覆盖：
+   - 研究问题质量（Interestingness 档位判断）
+   - 文献综述完整性
+   - 方法决策建议
+   - 因果识别策略
+   - 理论贡献定位
 
-**Tip:** The more specific your initial idea, the more targeted the questions will be. Include your assumed causal path, target population, and any method preferences.
+**技巧：** 初始想法描述得越具体，问题就越有针对性。可以包含你假设的因果路径、目标人群和方法偏好。
 
-### 2. Proposal Diagnosis
+### 2. Proposal 诊断
 
-**Use when:** You have a draft proposal (or even just a few paragraphs) and want to know what's missing before submission.
+**适合场景：** 你有一份 Proposal 草稿（哪怕只有几段），想在提交前知道缺了什么。
 
-**How it works:**
-1. Paste your proposal draft
-2. Receive a diagnosis report with severity labels:
-   - **Missing** — critical gaps that must be addressed
-   - **Insufficient** — present but not convincing
-   - **Good** — solid, with suggestions for further improvement
+**使用流程：**
+1. 粘贴你的 Proposal 草稿
+2. 获得一份带严重性标记的诊断报告：
+   - **缺失** — 必须补上的关键要素
+   - **不足** — 有但不够有说服力
+   - **良好** — 做得不错，附带提升建议
 
-**Diagnostic dimensions (in order):**
-- Research question quality (evaluated first, before everything else)
-- What do we know (literature review completeness)
-- What don't we know (research gap)
-- **So what** (standalone diagnostic — why does this matter?)
-- Logical consistency
-- Contribution positioning (change / challenge / advance)
+**诊断维度（按顺序输出）：**
+- **研究问题质量**（最先评估，在三大要素之前）
+- **What do we know**（文献综述完整性）
+- **What don't we know**（研究空白）
+- **So what**（独立诊断维度——你的研究为什么重要？）
+- 逻辑一致性
+- 贡献定位（change / challenge / advance）
 
-**Tip:** Even a rough paragraph is enough. The system doesn't require a perfectly structured proposal — it will identify which elements are present and which are missing.
+**技巧：** 即使只有一段粗略的文字也足够。系统不需要完美结构的 Proposal——它会自动识别哪些要素存在、哪些缺失。
 
-### 3. Research Design Check
+### 3. 研究设计检查
 
-**Use when:** Your proposal's "design/methods" section is ready and you want a thorough validity check before data collection.
+**适合场景：** 你的 Proposal 研究方法部分已就绪，想在数据收集前做一次全面效度检查。
 
-**How it works:**
-1. Describe your research design (hypothesis, method, sample, operationalization, identification strategy)
-2. The system detects your method type and generates a targeted checklist:
-   - **Experiments:** randomization feasibility, manipulation checks, Hawthorne effect
-   - **Archival data:** endogeneity threats, DiD/Matching/IV applicability
-   - **Surveys:** common method variance, reliability/validity
-   - **Qualitative:** saturation, coding procedures
-   - **Mixed methods:** incremental validity, explore vs. confirm division
-   - **Causal identification:** alternative explanations, mechanisms vs. confounders
+**使用流程：**
+1. 描述你的研究设计（假设、方法、样本、变量操作化、因果识别策略）
+2. 系统自动识别方法类型，生成针对性检查清单：
+   - **实验法：** 随机化可行性、操作检查、Hawthorne 效应
+   - **二手数据：** 内生性威胁、DiD/匹配/工具变量的适用性
+   - **调查法：** 共同方法偏差、信效度
+   - **定性研究：** 理论饱和、编码程序
+   - **混合方法：** 增量效度、explore vs. confirm 分工
+   - **因果识别：** 替代性解释、机制与混淆的区分
 
-**Tip:** Include your causal identification strategy explicitly — what alternative explanations have you ruled out, and how?
+**技巧：** 明确写出你的因果识别策略——你排除了哪些替代性解释？用什么方法排除的？
 
 ---
 
 ## Logic Coach
 
-### Abstraction Training
+### 抽象思维训练
 
-**Use when:** You read a news article or observe a phenomenon and want to practice abstracting it into a research-worthy question.
+**适合场景：** 你看到一则新闻或观察到一种现象，想练习把它抽象为一个有理论价值的研究问题。
 
-**How it works:**
-1. Enter a concrete description of a phenomenon or news event
-2. Complete three levels of abstraction with AI feedback at each step:
-   - **Level 1 — Topic Abstraction:** What is this fundamentally about?
-   - **Level 2 — Relationship Abstraction:** What is the relationship between the key elements?
-   - **Level 3 — Anomaly Abstraction:** What can't existing theories explain?
-3. Receive a complete three-level abstraction summary
+**使用流程：**
+1. 输入对具体现象或新闻的描述
+2. 在 AI 反馈下完成三级抽象练习：
+   - **Level 1 — Topic Abstraction：** 这本质上是什么主题？
+   - **Level 2 — Relationship Abstraction：** 核心要素之间是什么关系？
+   - **Level 3 — Anomaly Abstraction：** 有什么是现有理论解释不了的？
+3. 获得完整的三级抽象总结
 
-**Tip:** Start with something counterintuitive — the best research questions often come from anomalies, not obvious patterns.
+**技巧：** 从反直觉的现象入手——最好的研究问题往往来自异常，而非显而易见的规律。
 
-### Causality Sandbox
+### 因果推断沙盘
 
-**Use when:** You have an X → Y hypothesis and want to stress-test it before committing to a research design.
+**适合场景：** 你有一个 X→Y 的因果假设，想在正式设计研究之前做一轮压力测试。
 
-**How it works:**
-1. Enter your causal hypothesis
-2. **Step 1:** System lists the most likely alternative explanations (reverse causation, omitted variables, self-selection, measurement error, time trends)
-3. **Step 2:** Evaluate each explanation's severity in your specific context
-4. **Step 3:** Match remaining threats to appropriate identification strategies (RCT, DiD, Matching, IV)
-5. Review a final feasibility report
+**使用流程：**
+1. 输入你的因果假设
+2. **第一步：** 系统列出最可能的替代性解释（反向因果、遗漏变量、自选择、测量误差、时间趋势）
+3. **第二步：** 逐一评估每个解释在你的情境中的威胁程度
+4. **第三步：** 为未能排除的威胁匹配识别策略（RCT、DiD、Matching、IV）
+5. 查看最终的可行性评估报告
 
-**Tip:** The goal isn't to eliminate all threats — that's impossible. The goal is to know which threats remain and whether your chosen identification strategy adequately addresses them.
-
----
-
-## Workflow Tips
-
-### For a new study
-```
-1. Idea Analysis → Develop your research question
-2. Proposal Diagnosis → Validate your proposal draft
-3. Research Design Check → Ensure methodological rigor
-```
-
-### For practice and learning
-```
-Abstraction Training → Find research-worthy questions from everyday phenomena
-Causality Sandbox    → Stress-test causal claims before designing studies
-```
-
-### Using History
-- All 5 modules automatically save your sessions
-- Filter by tool type to find specific analyses
-- Pin important findings
-- Delete outdated attempts
+**技巧：** 目标不是排除所有威胁——那是不可能的。目标是知道哪些威胁仍然存在，以及你选择的识别策略是否能妥善处理它们。
 
 ---
 
-## Methodology Foundation
+## 工作流建议
 
-This platform is built on the complete methodology system from **Tsinghua SEM Research Methods I** (Prof. Zhang Chen), covering:
+### 开展一项新研究
+```
+1. 创意分析 → 发展和完善研究问题
+2. Proposal 诊断 → 验证提案草稿的完整性
+3. 研究设计检查 → 确保方法论严谨性
+```
 
-- Interestingness framework for research questions
-- Literature review strategies (categorize → integrate)
-- Study portfolio design (coherent + complementary + progressive)
-- Causal inference conditions (precede, covary, rule out alternatives)
-- Mixed methods (qualitative explore + quantitative confirm)
-- Qualitative coding procedures and saturation
-- Experimental prototype logic and alternative explanations
-- Field/natural experiments (DiD, matching, IV)
+### 日常思维训练
+```
+抽象思维训练 → 从日常现象中发现值得研究的问题
+因果推断沙盘 → 在设计研究之前对因果主张做压力测试
+```
+
+### 使用历史记录
+- 5 个模块的所有操作都会自动保存
+- 按工具类型筛选，快速定位特定分析
+- 置顶重要发现
+- 删除过时尝试
+
+---
+
+## 方法论基础
+
+本平台基于 **清华大学经管学院 Research Methods I**（张晨教授）的完整方法论体系构建，涵盖：
+
+- Interestingness 框架（研究问题三档判断）
+- 文献综述策略（categorize → further categorize → integrate）
+- 研究组合设计（coherent + complimentary + progressive）
+- 因果推断三条件（precede, covary, rule out alternatives）
+- 混合方法（qualitative explore + quantitative confirm）
+- 定性编码程序与理论饱和
+- 实验原型逻辑与替代性解释
+- 田野实验与自然实验（DiD, Matching, IV）
