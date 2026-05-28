@@ -1,65 +1,87 @@
-import Image from "next/image";
+'use client';
+
+import Link from 'next/link';
+
+const products = [
+  {
+    title: 'Idea Developer',
+    subtitle: '研究发展工具集',
+    desc: '基于管理研究方法论体系，覆盖"想法 → Proposal → 研究设计"全流程',
+    href: '/idea-developer',
+    color: 'from-blue-500 to-violet-600',
+    icon: '💡',
+    modules: ['创意分析', 'Proposal 诊断', '研究设计检查'],
+  },
+  {
+    title: 'Logic Coach',
+    subtitle: '逻辑思维训练器',
+    desc: '通过分步交互训练抽象思维能力和因果推断能力',
+    href: '/logic-coach',
+    color: 'from-indigo-500 to-emerald-600',
+    icon: '🧩',
+    modules: ['抽象思维训练', '因果推断沙盘'],
+  },
+];
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100">
+      <div className="max-w-4xl mx-auto px-4 py-16">
+        {/* Header */}
+        <div className="text-center mb-14">
+          <h1 className="text-4xl font-bold text-slate-800 tracking-tight">
+            人机协同设计平台
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <p className="mt-3 text-lg text-slate-500">
+            基于管理研究方法论体系 — 清华大学经管 Research Methods I
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        {/* Product cards */}
+        <div className="grid gap-8 sm:grid-cols-2">
+          {products.map((p) => (
+            <Link
+              key={p.href}
+              href={p.href}
+              className="group block bg-white rounded-2xl shadow-lg border border-slate-200 overflow-hidden hover:shadow-xl transition-all hover:-translate-y-0.5"
+            >
+              <div className={`h-2 bg-gradient-to-r ${p.color}`} />
+              <div className="p-8">
+                <div className="text-4xl mb-4">{p.icon}</div>
+                <h2 className="text-2xl font-bold text-slate-800 group-hover:text-blue-600 transition-colors">
+                  {p.title}
+                </h2>
+                <p className="text-sm text-violet-500 font-medium mt-0.5 mb-3">
+                  {p.subtitle}
+                </p>
+                <p className="text-sm text-slate-500 leading-relaxed mb-4">
+                  {p.desc}
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {p.modules.map((m) => (
+                    <span
+                      key={m}
+                      className="text-xs px-2.5 py-1 rounded-full bg-slate-100 text-slate-600"
+                    >
+                      {m}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </Link>
+          ))}
         </div>
-      </main>
+
+        {/* Footer */}
+        <div className="mt-12 text-center">
+          <Link
+            href="/history"
+            className="text-sm text-blue-500 hover:text-blue-700"
+          >
+            查看历史记录 →
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }
