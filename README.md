@@ -2,7 +2,8 @@
 
 > 基于管理研究方法论体系的人机协同研究平台
 > 覆盖"想法 → Proposal → 研究设计"全流程诊断与抽象思维/因果推断训练
-> [English version →](README.en.md)
+  
+[README English version](README.en.md)
 
 ---
 
