@@ -187,7 +187,7 @@ export default function AbstractionTrainer() {
             <div className="mb-8">
               <h1 className="text-3xl font-bold text-slate-800">抽象思维训练</h1>
               <p className="mt-2 text-slate-500">
-                输入一段新闻或具体现象描述，引导你完成 Topic → Relationship → Anomaly 三级抽象。
+                输入一段新闻或具体现象描述，引导您完成 Topic → Relationship → Anomaly 三级抽象。
               </p>
             </div>
             <div className="bg-white rounded-2xl shadow-lg p-8 border border-slate-200">
@@ -257,7 +257,7 @@ export default function AbstractionTrainer() {
 
             {/* Source text */}
             <div className="bg-slate-50 rounded-xl p-4 border border-slate-200 mb-6">
-              <p className="text-xs font-semibold text-slate-500 mb-1">你的原始描述</p>
+              <p className="text-xs font-semibold text-slate-500 mb-1">您的原始描述</p>
               <p className="text-sm text-slate-700">{sourceText}</p>
             </div>
 
@@ -276,7 +276,7 @@ export default function AbstractionTrainer() {
             {/* Input for current level */}
             <div className="bg-white rounded-xl border border-slate-200 p-5">
               <label className="block text-sm font-semibold text-slate-700 mb-2">
-                你的 {currentLevel.label} 抽象
+                您的 {currentLevel.label} 抽象
               </label>
               <textarea
                 rows={3}

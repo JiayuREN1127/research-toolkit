@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 import Cookies from 'js-cookie';
 
 const stages = [
-  { key: 'alternatives', label: '第一步', title: '列出替代性解释', icon: '⚠️', desc: '你的 X→Y 关系，还有什么其他可能的原因？' },
+  { key: 'alternatives', label: '第一步', title: '列出替代性解释', icon: '⚠️', desc: '您的 X→Y 关系，还有什么其他可能的原因？' },
   { key: 'evaluate', label: '第二步', title: '评估替代性解释', icon: '🔍', desc: '逐一考虑每个替代性解释是否构成严重威胁' },
   { key: 'strategies', label: '第三步', title: '匹配识别策略', icon: '🎯', desc: '为未能排除的威胁匹配合适的因果识别策略' },
 ];
@@ -138,7 +138,7 @@ export default function CausalitySandbox() {
             <div className="mb-8">
               <h1 className="text-3xl font-bold text-slate-800">因果推断沙盘</h1>
               <p className="mt-2 text-slate-500">
-                输入你的 X→Y 因果假设，系统帮你探索替代性解释、评估威胁、匹配识别策略。
+                输入您的 X→Y 因果假设，系统帮您探索替代性解释、评估威胁、匹配识别策略。
               </p>
             </div>
 
@@ -199,7 +199,7 @@ export default function CausalitySandbox() {
 
             {/* Hypothesis */}
             <div className="bg-amber-50 rounded-xl p-4 border border-amber-100 mb-6">
-              <p className="text-xs font-semibold text-amber-600 mb-1">你的假设</p>
+              <p className="text-xs font-semibold text-amber-600 mb-1">您的假设</p>
               <p className="text-sm text-amber-800">{hypothesis}</p>
             </div>
 

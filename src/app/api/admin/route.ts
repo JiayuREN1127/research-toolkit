@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getDb, SubmissionRow } from '@/lib/db';
 import { createHash } from 'crypto';
 
+const ADMIN_USERNAME = process.env.ADMIN_USERNAME || 'admin';
 const ADMIN_PASSWORD_HASH =
   process.env.ADMIN_PASSWORD_HASH ||
   '7b7e50019751c38fe485b2c7c210c4add4daef8857f27f0952bb4d100ade31b0';
@@ -13,10 +14,10 @@ function checkAdmin(req: NextRequest): boolean {
 
 // POST: login
 export async function POST(req: NextRequest) {
-  const { password } = await req.json();
+  const { username, password } = await req.json();
   const hash = createHash('sha256').update(password).digest('hex');
 
-  if (hash !== ADMIN_PASSWORD_HASH) {
+  if (username !== ADMIN_USERNAME || hash !== ADMIN_PASSWORD_HASH) {
     return NextResponse.json({ error: 'unauthorized' }, { status: 401 });
   }
 

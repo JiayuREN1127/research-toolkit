@@ -17,12 +17,14 @@
 
 进入首页，选择你的起点：
 
-- **Research Toolkit** → 研究发展全流程（3 个模块）
-- **Logic Coach** → 逻辑思维训练（2 个模块）
+- **Idea Developer** → 研究发展全流程（3 个模块：创意分析、Proposal 诊断、研究设计检查）
+- **Logic Coach** → 逻辑思维训练（2 个模块：抽象思维训练、因果推断沙盘）
 
 ---
 
-## Research Toolkit
+## Idea Developer
+
+> 研究发展工具集 — 基于管理研究方法论体系
 
 ### 1. 创意分析
 
@@ -82,6 +84,8 @@
 
 ## Logic Coach
 
+> 逻辑思维训练器 — 通过分步交互训练抽象思维能力和因果推断能力
+
 ### 抽象思维训练
 
 **适合场景：** 你看到一则新闻或观察到一种现象，想练习把它抽象为一个有理论价值的研究问题。
@@ -140,7 +144,7 @@
 
 - Interestingness 框架（研究问题三档判断）
 - 文献综述策略（categorize → further categorize → integrate）
-- 研究组合设计（coherent + complimentary + progressive）
+- 研究组合设计（coherent + complementary + progressive）
 - 因果推断三条件（precede, covary, rule out alternatives）
 - 混合方法（qualitative explore + quantitative confirm）
 - 定性编码程序与理论饱和

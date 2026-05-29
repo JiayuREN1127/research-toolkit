@@ -93,7 +93,7 @@ export default function ChatPage({ params }: { params: Promise<{ id: string }> }
       <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100 flex items-center justify-center px-4">
         <div className="max-w-md w-full text-center">
           <h2 className="text-xl font-bold text-slate-800 mb-6">
-            生成你的想法发展 Checklist...
+            生成您的想法发展 Checklist...
           </h2>
           <div className="w-full h-2 bg-slate-200 rounded-full overflow-hidden mb-3">
             <div
@@ -116,10 +116,10 @@ export default function ChatPage({ params }: { params: Promise<{ id: string }> }
           <div className="max-w-3xl mx-auto px-4 py-4 flex items-center justify-between">
             <div>
               <button
-                onClick={() => router.push('/research-toolkit')}
+                onClick={() => router.push('/idea-developer')}
                 className="text-sm text-slate-500 hover:text-slate-700"
               >
-                ← Research Toolkit
+                ← Idea Developer
               </button>
               <h1 className="text-lg font-bold text-slate-800 mt-0.5">
                 想法发展 Checklist
@@ -139,7 +139,7 @@ export default function ChatPage({ params }: { params: Promise<{ id: string }> }
 
         <div className="max-w-3xl mx-auto px-4 py-6">
           <div className="bg-blue-50 rounded-xl p-4 border border-blue-100 mb-8">
-            <p className="text-xs font-semibold text-blue-600 mb-1">你的想法</p>
+            <p className="text-xs font-semibold text-blue-600 mb-1">您的想法</p>
             <p className="text-sm text-blue-800">{conversation.idea}</p>
           </div>
 

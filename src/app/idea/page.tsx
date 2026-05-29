@@ -3,7 +3,7 @@
 import { useRouter } from 'next/navigation';
 import { useState, useEffect, useRef } from 'react';
 import Cookies from 'js-cookie';
-import ResearchInput from '@/components/ResearchInput';
+import IdeaInput from '@/components/IdeaInput';
 
 const ESTIMATED_MS = 12000;
 const TICK_MS = 100;
@@ -80,7 +80,7 @@ export default function IdeaPage() {
       <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100 flex items-center justify-center px-4">
         <div className="max-w-md w-full text-center">
           <h2 className="text-xl font-bold text-slate-800 mb-6">
-            分析你的研究想法...
+            分析您的研究想法...
           </h2>
           <div className="w-full h-2 bg-slate-200 rounded-full overflow-hidden mb-3">
             <div
@@ -101,12 +101,12 @@ export default function IdeaPage() {
       {/* Nav */}
       <header className="bg-white border-b border-slate-200 sticky top-0 z-10">
         <div className="max-w-3xl mx-auto px-4 py-4">
-          <a href="/research-toolkit" className="text-sm text-slate-500 hover:text-slate-700">
-            ← 返回 Research Toolkit
+          <a href="/idea-developer" className="text-sm text-slate-500 hover:text-slate-700">
+            ← 返回 Idea Developer
           </a>
         </div>
       </header>
-      <ResearchInput onSubmit={handleSubmit} />
+      <IdeaInput onSubmit={handleSubmit} />
     </div>
   );
 }

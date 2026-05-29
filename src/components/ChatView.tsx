@@ -37,7 +37,7 @@ export default function ChatView({
   const messages: Message[] = [
     {
       role: 'assistant' as const,
-      content: `我收到了你的研究想法。为了更好地帮助你发展这个想法，我需要了解一些关键细节。请回答以下问题：`,
+      content: `我收到了您的研究想法。为了更好地帮助您发展这个想法，我需要了解一些关键细节。请回答以下问题：`,
       timestamp: Date.now() - 1000,
     },
     ...questions.flatMap((q, i) => [
@@ -80,7 +80,7 @@ export default function ChatView({
       <div className="max-w-3xl mx-auto px-4 py-6 space-y-6">
         {/* Idea summary */}
         <div className="bg-blue-50 rounded-xl p-4 border border-blue-100">
-          <p className="text-xs font-semibold text-blue-600 mb-1">你的想法</p>
+          <p className="text-xs font-semibold text-blue-600 mb-1">您的想法</p>
           <p className="text-sm text-blue-800">{idea}</p>
         </div>
 

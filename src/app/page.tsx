@@ -4,10 +4,10 @@ import Link from 'next/link';
 
 const products = [
   {
-    title: 'Research Toolkit',
+    title: 'Idea Developer',
     subtitle: '研究发展工具集',
     desc: '基于管理研究方法论体系，覆盖"想法 → Proposal → 研究设计"全流程',
-    href: '/research-toolkit',
+    href: '/idea-developer',
     color: 'from-blue-500 to-violet-600',
     icon: '💡',
     modules: ['创意分析', 'Proposal 诊断', '研究设计检查'],
@@ -30,7 +30,7 @@ export default function Home() {
         {/* Header */}
         <div className="text-center mb-14">
           <h1 className="text-4xl font-bold text-slate-800 tracking-tight">
-            人机协同设计平台
+            Research Toolkit
           </h1>
           <p className="mt-3 text-lg text-slate-500">
             基于管理研究方法论体系 — 清华大学经管 Research Methods I

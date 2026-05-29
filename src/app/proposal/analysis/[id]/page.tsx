@@ -65,10 +65,10 @@ export default function ProposalAnalysisPage({
         <div className="max-w-3xl mx-auto px-4 py-4 flex items-center justify-between">
           <div>
             <button
-              onClick={() => router.push('/research-toolkit')}
+              onClick={() => router.push('/idea-developer')}
               className="text-sm text-slate-500 hover:text-slate-700"
             >
-              ← Research Toolkit
+              ← Idea Developer
             </button>
             <h1 className="text-lg font-bold text-slate-800 mt-0.5">
               Proposal 诊断报告
@@ -85,7 +85,7 @@ export default function ProposalAnalysisPage({
 
       <div className="max-w-3xl mx-auto px-4 py-6">
         <div className="bg-violet-50 rounded-xl p-4 border border-violet-100 mb-8">
-          <p className="text-xs font-semibold text-violet-600 mb-1">你的 Proposal</p>
+          <p className="text-xs font-semibold text-violet-600 mb-1">您的 Proposal</p>
           <pre className="text-sm text-violet-800 whitespace-pre-wrap font-mono text-xs leading-relaxed max-h-48 overflow-y-auto">
             {data.proposal}
           </pre>

@@ -61,7 +61,7 @@ function generateMockCausalityData(hypothesis: string, stage: string): any {
           howToAddress: '使用面板数据和控制组比较，或通过 DID 设计排除时间趋势。',
         },
       ],
-      summary: `你的假设「${hypothesis.slice(0, 40)}...」面临的主要因果威胁是反向因果和遗漏变量，这两个是高威胁。需要先排除这两者，结论才能成立。`,
+      summary: `您的假设「${hypothesis.slice(0, 40)}...」面临的主要因果威胁是反向因果和遗漏变量，这两个是高威胁。需要先排除这两者，结论才能成立。`,
       nextStep: '进入第二步，评估每个替代性解释在当前情境下的严重程度。',
     };
   } else if (stage === 'evaluate') {

@@ -42,6 +42,7 @@ export default function AdminPage() {
   const [loading, setLoading] = useState(true);
   const [authenticated, setAuthenticated] = useState(false);
   const [password, setPassword] = useState('');
+  const [username, setUsername] = useState('');
   const [loginError, setLoginError] = useState('');
   const [loginLoading, setLoginLoading] = useState(false);
   const [showLogin, setShowLogin] = useState(true);
@@ -68,7 +69,7 @@ export default function AdminPage() {
   const loadData = (t: 'submissions' | 'logs') => {
     setLoading(true);
     if (t === 'submissions') {
-      fetch('/api/admin/data?type=submissions')
+      fetch('/api/admin?type=submissions')
         .then((r) => r.json())
         .then((d) => {
           setSubmissions(d.submissions || []);
@@ -77,7 +78,7 @@ export default function AdminPage() {
         })
         .catch(() => setLoading(false));
     } else {
-      fetch('/api/admin/data?type=logs')
+      fetch('/api/admin?type=logs')
         .then((r) => r.json())
         .then((d) => {
           setLogs(d.logs || []);
@@ -96,7 +97,7 @@ export default function AdminPage() {
       const r = await fetch('/api/admin', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ password }),
+        body: JSON.stringify({ username, password }),
       });
       if (r.ok) {
         setAuthenticated(true);
@@ -121,7 +122,18 @@ export default function AdminPage() {
               管理员登录
             </h1>
             <form onSubmit={handleLogin}>
-              <label htmlFor="pw" className="block text-sm font-semibold text-slate-700 mb-2">
+              <label htmlFor="un" className="block text-sm font-semibold text-slate-700 mb-2">
+                用户名
+              </label>
+              <input
+                id="un"
+                type="text"
+                className="w-full rounded-xl border border-slate-300 px-4 py-3 text-slate-800 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-100"
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
+                placeholder="可以用您的真名，也可以用花名"
+              />
+              <label htmlFor="pw" className="block text-sm font-semibold text-slate-700 mb-2 mt-4">
                 管理密码
               </label>
               <input
@@ -135,7 +147,7 @@ export default function AdminPage() {
               {loginError && <p className="mt-3 text-sm text-red-600">{loginError}</p>}
               <button
                 type="submit"
-                disabled={loginLoading || !password}
+                disabled={loginLoading || !password || !username}
                 className="mt-6 w-full px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
               >
                 {loginLoading ? '登录中...' : '登录'}

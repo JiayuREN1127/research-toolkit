@@ -17,12 +17,14 @@ A human-AI collaborative research platform that guides the full workflow of stud
 
 Enter the homepage, choose your starting point:
 
-- **Research Toolkit** → For study development (3 modules)
-- **Logic Coach** → For thinking skills training (2 modules)
+- **Idea Developer** → For study development (3 modules: Idea Analysis, Proposal Diagnosis, Research Design Check)
+- **Logic Coach** → For thinking skills training (2 modules: Abstraction Training, Causality Sandbox)
 
 ---
 
-## Research Toolkit
+## Idea Developer
+
+> 研究发展工具集 — 覆盖"想法 → Proposal → 研究设计"全流程
 
 ### 1. Idea Analysis
 
@@ -81,6 +83,8 @@ Enter the homepage, choose your starting point:
 ---
 
 ## Logic Coach
+
+> 逻辑思维训练器 — 通过分步交互训练抽象思维能力和因果推断能力
 
 ### Abstraction Training
 

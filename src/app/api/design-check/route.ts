@@ -87,8 +87,8 @@ function generateMockChecklist(design: string, method: string): any[] {
   // Generic: internal validity
   items.push({
     category: '研究设计完整性',
-    point: '内部效度：你的发现能在多大程度上支持所声称的结论？',
-    reason: '如果存在替代性解释或混淆变量，你的发现可能不是由 X 导致的，而是由其他因素。',
+    point: '内部效度：您的发现能在多大程度上支持所声称的结论？',
+    reason: '如果存在替代性解释或混淆变量，您的发现可能不是由 X 导致的，而是由其他因素。',
     example: '→ 例：替代性解释 → 高创造力的人主动选择灵活工作制（反向因果）\n→ 例：遗漏变量 → 企业文化同时推动灵活工作制和知识共享',
     knowledgePoint: ref(['因果', 'covary']),
   });
@@ -140,7 +140,7 @@ function generateMockChecklist(design: string, method: string): any[] {
     items.push({
       category: '因果识别',
       point: '明确区分"替代性解释"和"额外机制"：前者推翻结论，后者丰富解释',
-      reason: '替代性解释否定的是你对结果的解读和结论（X causes Y），而不是统计结果本身。额外机制只是增加一条路径，不否定原有关系。',
+      reason: '替代性解释否定的是您对结果的解读和结论（X causes Y），而不是统计结果本身。额外机制只是增加一条路径，不否定原有关系。',
       example: '→ 例（替代性解释）→ 是企业文化而非灵活工作制导致了知识共享增加\n→ 例（额外机制）→ 灵活工作制除通过心理安全感外，还通过工作满意度影响知识共享',
       knowledgePoint: ref(['替代性解释', 'alternative']),
     });

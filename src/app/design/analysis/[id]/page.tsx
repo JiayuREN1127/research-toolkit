@@ -65,10 +65,10 @@ export default function DesignAnalysisPage({
         <div className="max-w-3xl mx-auto px-4 py-4 flex items-center justify-between">
           <div>
             <button
-              onClick={() => router.push('/research-toolkit')}
+              onClick={() => router.push('/idea-developer')}
               className="text-sm text-slate-500 hover:text-slate-700"
             >
-              ← Research Toolkit
+              ← Idea Developer
             </button>
             <h1 className="text-lg font-bold text-slate-800 mt-0.5">
               研究设计检查清单
@@ -85,7 +85,7 @@ export default function DesignAnalysisPage({
 
       <div className="max-w-3xl mx-auto px-4 py-6">
         <div className="bg-emerald-50 rounded-xl p-4 border border-emerald-100 mb-8">
-          <p className="text-xs font-semibold text-emerald-600 mb-1">你的研究设计</p>
+          <p className="text-xs font-semibold text-emerald-600 mb-1">您的研究设计</p>
           <pre className="text-sm text-emerald-800 whitespace-pre-wrap font-mono text-xs leading-relaxed max-h-48 overflow-y-auto">
             {data.design}
           </pre>

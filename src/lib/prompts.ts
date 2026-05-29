@@ -7,7 +7,7 @@ const kbSummary = knowledgePoints
   )
   .join('\n');
 
-export const ANALYZE_PROMPT = `你是一个管理研究方法论顾问。你掌握以下方法论知识体系：
+export const ANALYZE_PROMPT = `您是一个管理研究方法论顾问。您掌握以下方法论知识体系：
 
 ${kbSummary}
 
@@ -23,7 +23,7 @@ ${kbSummary}
 
 请以 JSON 数组格式返回，每个元素是一个字符串（问题）。不要包含任何其他文字。`;
 
-export const GENERATE_PROMPT = `你是一个管理研究方法论顾问。你掌握以下方法论知识体系：
+export const GENERATE_PROMPT = `您是一个管理研究方法论顾问。您掌握以下方法论知识体系：
 
 ${kbSummary}
 
@@ -44,7 +44,7 @@ Checklist 规则：
 [
   {
     "category": "研究问题质量",
-    "point": "你的简明要点（一句话）",
+    "point": "您的简明要点（一句话）",
     "reason": "为什么重要的简要解释（2-3句）",
     "example": "→ 例1：具体例子\n→ 例2：具体例子",
     "refSession": 2,
@@ -57,7 +57,7 @@ Checklist 规则：
 
 refSession/refTopic/refPdf/refPage 必须从上方知识体系中匹配最相关的条目。不要包含任何其他文字。`;
 
-export const PROPOSAL_ANALYZE_PROMPT = `你是一个管理研究方法论顾问。你掌握以下方法论知识体系：
+export const PROPOSAL_ANALYZE_PROMPT = `您是一个管理研究方法论顾问。您掌握以下方法论知识体系：
 
 ${kbSummary}
 
@@ -80,7 +80,7 @@ ${kbSummary}
 
 **3. SO WHAT**（研究意义——这是"What don't we know"的诊断核心）：
    - 是否明确陈述了已有答案为何不充分？
-   - 你的研究将如何改变、挑战或推进已有理解？
+   - 您的研究将如何改变、挑战或推进已有理解？
    - "So what?"是否成立——有多少研究者会关心这个空白？
    - 如果 SO WHAT 缺失或空洞，整个 proposal 就失去了存在的理由
 
@@ -115,7 +115,7 @@ severity 取值：
 按类别顺序输出：研究问题质量 → 文献综述完整性 → 研究空白 → SO WHAT 诊断 → 逻辑一致性 → 贡献定位。
 总共 8-12 条。不要包含任何其他文字。`;
 
-export const DESIGN_CHECK_PROMPT = `你是一个管理研究方法论顾问。你掌握以下方法论知识体系：
+export const DESIGN_CHECK_PROMPT = `您是一个管理研究方法论顾问。您掌握以下方法论知识体系：
 
 ${kbSummary}
 
@@ -181,7 +181,7 @@ ${kbSummary}
 按类别分组：研究设计完整性、方法适配性、因果识别、效度保障。
 总共 8-15 条。不要包含任何其他文字。`;
 
-export const ABSTRACTION_TRAIN_PROMPT = `你是一个管理研究方法论教练。你掌握以下方法论知识体系：
+export const ABSTRACTION_TRAIN_PROMPT = `您是一个管理研究方法论教练。您掌握以下方法论知识体系：
 
 ${kbSummary}
 
@@ -213,15 +213,15 @@ ${kbSummary}
 
 请以如下 JSON 格式返回：
 {
-  "feedback": "对你当前抽象层级的反馈（2-3句话）",
+  "feedback": "对您当前抽象层级的反馈（2-3句话）",
   "suggestion": "改进建议（具体、可操作）",
-  "exampleAbstraction": "给你一个示例性的更好抽象（一句话）",
-  "nextQuestion": "引导你进入下一级抽象的问题"
+  "exampleAbstraction": "给您一个示例性的更好抽象（一句话）",
+  "nextQuestion": "引导您进入下一级抽象的问题"
 }
 
 不要包含任何其他文字。`;
 
-export const CAUSALITY_SANDBOX_PROMPT = `你是一个管理研究方法论教练。你掌握以下方法论知识体系：
+export const CAUSALITY_SANDBOX_PROMPT = `您是一个管理研究方法论教练。您掌握以下方法论知识体系：
 
 ${kbSummary}
 

@@ -51,23 +51,23 @@ export function generateMockQuestions(idea: string): string[] {
   const questions: string[] = [];
 
   if (!p.hasLevel) {
-    questions.push('你的研究层面是微观（个体）、中观（团队）还是宏观（组织）？这会影响你的方法选择和文献对话对象。');
+    questions.push('您的研究层面是微观（个体）、中观（团队）还是宏观（组织）？这会影响您的方法选择和文献对话对象。');
   }
   if (p.hasCausality && !p.hasMechanism) {
-    questions.push('你假设的因果机制是什么？X 通过什么路径或过程影响 Y？有没有考虑中介或调节变量？');
+    questions.push('您假设的因果机制是什么？X 通过什么路径或过程影响 Y？有没有考虑中介或调节变量？');
   }
   if (!p.hasContext) {
-    questions.push('你的研究情境和目标样本是什么？（如：哪个行业、哪类人群、哪个国家/地区？）');
+    questions.push('您的研究情境和目标样本是什么？（如：哪个行业、哪类人群、哪个国家/地区？）');
   }
-  questions.push('你的核心构念具体如何操作化？每个关键变量你打算如何测量？');
+  questions.push('您的核心构念具体如何操作化？每个关键变量您打算如何测量？');
   if (p.hasCausality) {
-    questions.push('你打算如何排除替代性解释？除了 X→Y，还有什么其他原因可能导致你观察到的关系？');
+    questions.push('您打算如何排除替代性解释？除了 X→Y，还有什么其他原因可能导致您观察到的关系？');
   }
   if (!p.hasLiterature) {
-    questions.push('在这个话题上，已有的文献对话进行到哪里了？你知道这场"对话"中已有谁在说话吗？');
+    questions.push('在这个话题上，已有的文献对话进行到哪里了？您知道这场"对话"中已有谁在说话吗？');
   }
   if (p.hasNovelty) {
-    questions.push('你的"新"属于哪种类型？是 new mechanism、new boundary condition 还是 new concept？');
+    questions.push('您的"新"属于哪种类型？是 new mechanism、new boundary condition 还是 new concept？');
   }
 
   return questions.slice(0, 5);
@@ -83,7 +83,7 @@ export function generateMockChecklist(idea: string, _answers: string): Checklist
   items.push({
     category: '研究问题质量',
     point: '确认研究问题处于 Interestingness 的恰当档：不 obvious 但不止一个可能答案',
-    reason: '走得太远（套路化双刃剑、过度反直觉）和不够（直白显然）都会削弱论文的贡献力。需要先判断你的问题落在哪一档。',
+    reason: '走得太远（套路化双刃剑、过度反直觉）和不够（直白显然）都会削弱论文的贡献力。需要先判断您的问题落在哪一档。',
     example: '→ 例：「远程办公影响创造力」→ 太直白（已知太多）\n→ 例：「远程办公既提升又降低创造力」→ 套路化双刃剑\n→ 恰当：「在高不确定性情境下，远程办公通过数字工具丰富度对创造力产生倒U型效应」',
     knowledgePoint: ref(['interesting', '新颖']),
   });
@@ -91,7 +91,7 @@ export function generateMockChecklist(idea: string, _answers: string): Checklist
   items.push({
     category: '研究问题质量',
     point: '核心构念需要有清晰的理论定义和操作化定义',
-    reason: '如果构念的定义模糊，后续的测量、文献对话和方法选择都会失焦。需要能说清楚"你说的 X 到底是什么"。',
+    reason: '如果构念的定义模糊，后续的测量、文献对话和方法选择都会失焦。需要能说清楚"您说的 X 到底是什么"。',
     example: '→ 例：「创造力」→ 需明确是个体创新行为自评、代码新颖性评分、还是专利产出\n→ 例：「远程办公」→ 需明确是每周远程天数占比、还是混合/纯远程的二分类',
     knowledgePoint: ref(['因果', 'covary']),
   });
@@ -110,7 +110,7 @@ export function generateMockChecklist(idea: string, _answers: string): Checklist
   items.push({
     category: '文献综述',
     point: '文献综述需要做到三步归纳：categorize → further categorize → integrative framework',
-    reason: '仅仅罗列文献发现无法帮助建立理论对话。需要先宽分类、再细分类、最后整合成一个框架，才能定位你的贡献位置。',
+    reason: '仅仅罗列文献发现无法帮助建立理论对话。需要先宽分类、再细分类、最后整合成一个框架，才能定位您的贡献位置。',
     example: '→ 例：宽分类 → 远程办公研究分 productivity 和 well-being 两条线\n→ 例：细分类 → productivity 线又分 task performance 和 innovation\n→ 例：整合 → 发现创新维度的边界条件尚不清晰',
     knowledgePoint: ref(['综合', 'categorize']),
   });
@@ -118,7 +118,7 @@ export function generateMockChecklist(idea: string, _answers: string): Checklist
   if (!p.hasLiterature) {
     items.push({
       category: '文献综述',
-      point: '需要明确你的研究要贡献给哪个 ongoing conversation',
+      point: '需要明确您的研究要贡献给哪个 ongoing conversation',
       reason: 'Know the conversation so that we can contribute to the conversation。不知道对话进行到哪，就无法定位自己的贡献。',
       example: '→ 例：对话对象可能是 OB 领域的 work arrangement 文献\n→ 例：也可能是 innovation 领域的 creativity antecedents 文献\n→ 关键：选定后需要系统检索该领域的 top journals',
       knowledgePoint: ref(['文献综述', 'conversation']),
@@ -157,7 +157,7 @@ export function generateMockChecklist(idea: string, _answers: string): Checklist
     items.push({
       category: '因果识别',
       point: '必须满足因果推断三条件：X precedes Y、X-Y covary、排除替代性解释',
-      reason: '最难的是第三条。即使 X 和 Y 相关，如果存在其他原因导致这个共变，你的因果结论就会被推翻。',
+      reason: '最难的是第三条。即使 X 和 Y 相关，如果存在其他原因导致这个共变，您的因果结论就会被推翻。',
       example: '→ 例：替代性解释 → 高创造力的人主动选择四天工作制（反向因果）\n→ 例：遗漏变量 → 企业文化同时推动四天工作制和知识共享\n→ 例：自选择 → 更有安全感的员工自愿参与调研',
       knowledgePoint: ref(['因果', 'causality']),
     });
@@ -165,7 +165,7 @@ export function generateMockChecklist(idea: string, _answers: string): Checklist
     items.push({
       category: '因果识别',
       point: '明确区分"替代性解释"和"额外机制"：前者推翻结论，后者丰富解释',
-      reason: '替代性解释否定的是你对结果的解读和结论（X causes Y），而不是统计结果本身。额外机制只是增加一条路径，不否定原有关系。',
+      reason: '替代性解释否定的是您对结果的解读和结论（X causes Y），而不是统计结果本身。额外机制只是增加一条路径，不否定原有关系。',
       example: '→ 例（替代性解释）→ 是企业文化而非四天工作制导致了知识共享增加\n→ 例（额外机制）→ 四天工作制除通过心理安全感外，还通过工作满意度影响知识共享',
       knowledgePoint: ref(['替代性解释', 'alternative']),
     });

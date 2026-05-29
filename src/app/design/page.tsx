@@ -76,7 +76,7 @@ export default function DesignPage() {
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100">
       <header className="bg-white border-b border-slate-200 sticky top-0 z-10">
         <div className="max-w-3xl mx-auto px-4 py-4">
-          <a href="/research-toolkit" className="text-sm text-slate-500 hover:text-slate-700">← 返回 Research Toolkit</a>
+          <a href="/idea-developer" className="text-sm text-slate-500 hover:text-slate-700">← 返回 Idea Developer</a>
         </div>
       </header>
 
@@ -84,7 +84,7 @@ export default function DesignPage() {
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-slate-800">研究设计检查</h1>
           <p className="mt-2 text-slate-500">
-            描述你的研究设计，系统将根据方法类型生成针对性的效度检查清单。
+            描述您的研究设计，系统将根据方法类型生成针对性的效度检查清单。
           </p>
         </div>
 
@@ -102,7 +102,7 @@ export default function DesignPage() {
 X → Y 的因果关系假设是什么？
 
 【研究方法】
-你打算用什么方法？（实验 / 二手数据 / 调查 / 访谈 / 混合方法 / 定性）
+您打算用什么方法？（实验 / 二手数据 / 调查 / 访谈 / 混合方法 / 定性）
 
 【样本与情境】
 目标样本是什么？在什么情境下收集数据？

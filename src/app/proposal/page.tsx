@@ -76,7 +76,7 @@ export default function ProposalPage() {
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100">
       <header className="bg-white border-b border-slate-200 sticky top-0 z-10">
         <div className="max-w-3xl mx-auto px-4 py-4">
-          <a href="/research-toolkit" className="text-sm text-slate-500 hover:text-slate-700">← 返回 Research Toolkit</a>
+          <a href="/idea-developer" className="text-sm text-slate-500 hover:text-slate-700">← 返回 Idea Developer</a>
         </div>
       </header>
 
@@ -84,7 +84,7 @@ export default function ProposalPage() {
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-slate-800">Proposal 诊断</h1>
           <p className="mt-2 text-slate-500">
-            粘贴你的 Proposal 草稿，系统将对照三大要素（What do we know / What don't we know / So what）进行诊断，同时评估研究问题质量。
+            粘贴您的 Proposal 草稿，系统将对照三大要素（What do we know / What don't we know / So what）进行诊断，同时评估研究问题质量。
           </p>
         </div>
 
@@ -99,7 +99,7 @@ export default function ProposalPage() {
             placeholder={`建议包含以下部分（可选）：
 
 【研究问题】
-你的研究问题是什么？
+您的研究问题是什么？
 
 【What do we know】
 已有文献的理解和关键发现...
@@ -108,10 +108,10 @@ export default function ProposalPage() {
 已有答案的不足和矛盾之处...
 
 【So what】
-你的研究为什么重要？将如何改变、挑战或推进已有理解？
+您的研究为什么重要？将如何改变、挑战或推进已有理解？
 
 【假设】
-你的假设或命题...`}
+您的假设或命题...`}
             value={proposal}
             onChange={(e) => setProposal(e.target.value)}
           />
